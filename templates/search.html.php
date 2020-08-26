@@ -61,10 +61,9 @@
 
 <section id="main_text">
 
-    <h1 >Album Search Page</h1>
+    <h1 >Album Search</h1>
 
-    <p>Find your favourite Jazz, Hip Hop and Country music albums from our wide selection using search form below.</p>
-
+   
     <span class="search_error">Fields cannot be empty. Enter either artistname, album name or select genre</span>
     
     <!--Search Form--> 

@@ -1,11 +1,6 @@
 <section id="main_text" class="group" role="main">
-
-<ul class="categories">
-  <?php foreach ($categories as $category) : ?>
-    <li><a href="/review/list?category=<?=$category->id?>"><?=$category->name?></a><li>
-  <?php endforeach; ?>
-</ul>
-
+  <h1>Reviews & Review Categories</h1>
+  
 <div class="reviews">
 
 <p><?=$totalReviews?> reviews have been submitted to the Mannering Review Database.</p>
@@ -51,4 +46,10 @@ for ($i = 1; $i <= $numPages; $i++) :
 <?php endfor; ?>
 
 </span>
+    </div>
+    <ul class="categories">
+    <?php foreach ($categories as $category) : ?>
+      <li><a href="/review/list?category=<?=$category->id?>"><?=$category->name?></a><li>
+    <?php endforeach; ?>
+  </ul>
 </section>

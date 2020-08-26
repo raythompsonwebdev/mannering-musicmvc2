@@ -27,17 +27,17 @@
 
   <body>
 
-    <div id="wrapper">
+  <div id="wrapper">
 
     <header role="banner">
 
-    <!---logo-->
-    <hgroup>
+      <!---logo-->
+      <hgroup>
         <h1 id="logo"><span>MANNERING</span><span>MU</span>SIC</h1>
         <h2 class="site-description">Jazz, Hip Hop & Country</h2>
       </hgroup>
 
-      <span class="social">
+      <!-- <span class="social">
         <ul id="social">
 
           <li class="social-item"><a href="">Link</a></li>
@@ -45,82 +45,83 @@
 
 
         </ul>
-      </span>
+      </span> -->    
+
+      <button id="mobile-toggle" title="menu">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </button>
+
+        <!--navigation here-->
+        <nav role="navigation" >
+
+          <ul id="inner_nav">
+            <li><a rel='tab' href="/">Home</a></li>
+            <li><a href="/review/list">Reviews</a></li>
+            <li><a rel='tab' href="/search">Search</a></li>
+            <li><a rel='tab' href="/video">Video</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">About</a></li>
+            <li><a rel='tab' href="/contact">Contact</a></li>
+            <?php if ($loggedIn) : ?>
+            <li class="social-item"><a href="/logout">Log out</a>
+            <?php else : ?>
+            <li class="social-item"><a href="/login">Log in</a></li>
+            <?php endif; ?>
+          </ul>
+
+          <ul id="mobile_inner_nav">
+            <li><a rel='tab' href="/">Home</a></li>
+            <li><a href="/review/list">Reviews</a></li>
+            <li><a rel='tab' href="/search">Search</a></li>
+            <li><a rel='tab' href="/video">Video</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">About</a></li>
+            <li><a rel='tab' href="/contact">Contact</a></li>
+            <?php if ($loggedIn) : ?>
+            <li class="social-item"><a href="/logout">Log out</a>
+            <?php else : ?>
+            <li class="social-item"><a href="/login">Log in</a></li>
+            <?php endif; ?>
+          </ul>
+
+        </nav>
 
     </header>
-    <button id="mobile-toggle" title="menu">
-      <i class="fa fa-bars" aria-hidden="true"></i>
-    </button>
-      <!--navigation here-->
-      <nav role="navigation" >
-
-        <ul id="inner_nav">
-            <li><a rel='tab' href="/">Home</a></li>
-            <li><a href="/review/list">Reviews</a></li>
-            <!-- <li><a href="/review/edit">Add Review</a></li> -->
-            <li><a rel='tab' href="/search">Search</a></li>
-            <li><a rel='tab' href="/video">Video</a></li>
-
-        <?php if ($loggedIn) : ?>
-            <li class="social-item"><a href="/logout">Log out</a>
-        <?php else : ?>
-            <li class="social-item"><a href="/login">Log in</a></li>
-        <?php endif; ?>
-        </ul>
-
-        <ul id="mobile_inner_nav">
-            <li><a rel='tab' href="/">Home</a></li>
-            <li><a href="/review/list">Reviews</a></li>
-            <!-- <li><a href="/review/edit">Add Review</a></li> -->
-            <li><a rel='tab' href="/search">Search</a></li>
-            <li><a rel='tab' href="/video">Video</a></li>
-
-        <?php if ($loggedIn) : ?>
-            <li class="social-item"><a href="/logout">Log out</a>
-        <?php else : ?>
-            <li class="social-item"><a href="/login">Log in</a></li>
-        <?php endif; ?>
-        </ul>
-
-      </nav>
 
       <!-- /.container -->
       <main id="content">
 
-
-
               <?php echo $output; ?>
-
-
 
       </main>
 
 
-<!--footer here-->
-<footer role="navigation">
+      <!--footer here-->
+      <footer role="navigation">
 
-   <div class="social-btns">
-  <ul>
-    <li><a href="#"><i class="fa fa-twitter soc"></i></a></li>
-      <li><a href="#"><i class="fa fa-facebook soc"></i></a></li>
-        <li><a href="#"><i class="fa fa-rss soc"></i></a></li>
-      <li><a href="#"><i class="fa fa-dribbble soc"></i></a></li>
-    <li><a href="#"><i class="fa fa-instagram soc"></i></a></li>
-  </ul>
-</div>
-  <ul id="inner_footer">
-    <li><a href="#">Terms</a></li>
-      <li><a href="#">Privacy</a></li>
-      <li><a href="#">About</a></li>
-      <li><a rel='tab' href="/contact">Contact</a></li>
+  <?=var_dump($singleaudio)?>
+            
+        <!-- <div class="social-btns">
+          <ul>
+            <li><a href="#"><i class="fa fa-twitter soc"></i></a></li>
+              <li><a href="#"><i class="fa fa-facebook soc"></i></a></li>
+                <li><a href="#"><i class="fa fa-rss soc"></i></a></li>
+              <li><a href="#"><i class="fa fa-dribbble soc"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram soc"></i></a></li>
+          </ul>
+        </div> -->
+        <!-- <ul id="inner_footer">
+         
 
-  </ul>
+        </ul> -->
 
-</footer><!--Footer end-->
+      </footer><!--Footer end-->
 
-<!--google analytics here-->
+      <!--google analytics here-->
 
-    </div><!-- /.wrapper end -->
+  </div><!-- /.wrapper end -->
 
     <script src="/assets/js/main.js" defer></script>
 

@@ -361,7 +361,7 @@
             </div>
             <h2><?=$singlealbums->getNumberOfSongs(); ?> Songs</span></h2>
             <br/>
- <!-- <span> Plays: $value[4]</span> PLays -->
+
             <!--Audio Playlist-->
             <ul class="audio-tracklist">                
                 <?php
